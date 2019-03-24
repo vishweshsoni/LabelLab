@@ -8,5 +8,6 @@ deploy:
     secure: ssh-rsa AAAAB3NzaC...tv2neYFWJ
   app: radiant-harbor-82820
   on:
-    repo:  vishweshsoni/LabelLab 
+    repo:  https://git.heroku.com/radiant-harbor-82820.git
+ 
 script: 'true'
