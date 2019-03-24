@@ -3,6 +3,7 @@ var mysql = require("mysql");
 var md5 = require('md5');
 var path = require('path');
 var gm = require('gm');
+var express = require('express');
 var multer =require('multer');
 var fs =require('fs');
 //for prototype only height and width needed from server side 
