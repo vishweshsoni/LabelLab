@@ -1,10 +1,11 @@
 language: node_js
 node_js:
-  -  8.10.0
+  -  "8.10.0"
+install: npm install --save
 deploy:
   provider: heroku
   api_key:
-    secure: KEY
+    secure: ssh-rsa AAAAB3NzaC...tv2neYFWJ
   app: radiant-harbor-82820
   on:
-    repo:  https://github.com/vishweshsoni/LabelLab.git
+    repo:  vishweshsoni/LabelLab 
