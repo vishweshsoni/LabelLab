@@ -69,7 +69,7 @@ REST.prototype.configureExpress = function(connection){
         
         self.startServer();
         }
-    //https://git.heroku.com/radiant-harbor-82820.git
+    
 
     REST.prototype.startServer = function(){
         app.listen(process.env.PORT,function(){
