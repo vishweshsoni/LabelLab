@@ -5,7 +5,7 @@ install: npm install --save
 deploy:
   provider: heroku
   api_key:
-    secure: ssh-rsa AAAAB3NzaC...tv2neYFWJ
+    secure: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCT41sN
   app: radiant-harbor-82820
   on:
     repo:  vishweshsoni/LabelLab
