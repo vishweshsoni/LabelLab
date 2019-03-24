@@ -9,3 +9,4 @@ deploy:
   app: radiant-harbor-82820
   on:
     repo:  vishweshsoni/LabelLab 
+script: 'true'
