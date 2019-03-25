@@ -15,7 +15,7 @@ var cloudinary =require('cloudinary');
 var cloudinaryStorage = require('multer-storage-cloudinary');
 require('dotenv').config();
 cloudinary.config({
-  cloud_name:dfje1vdj4,
+  cloud_name:'dfje1vdj4',
   api_key: 123315576572985,
   api_secret: 'mbXRV1gEsstp9pvUgXS8-3vuCqM',
 });
