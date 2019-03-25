@@ -15,9 +15,9 @@ var cloudinary =require('cloudinary');
 var cloudinaryStorage = require('multer-storage-cloudinary');
 require('dotenv').config();
 cloudinary.config({
-  cloud_name:process.env.CLOUD_NAME,
-  api_key: process.env.API_KEY,
-  api_secret: process.env.API_SECRET,
+  cloud_name:process.env.CLOUD_NAME,//cloud name private-name
+  api_key: process.env.API_KEY,   //cloud key private api key
+  api_secret: process.env.API_SECRET, //cloud api secret api_secret key
 });
 
 const directoryPath ='/home/vishwesh/Desktop/Vish/api/uploads';

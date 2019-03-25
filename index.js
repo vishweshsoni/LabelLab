@@ -29,10 +29,10 @@ REST.prototype.connectMysql =function(){
 var self =this;
  var pool =mysql.createPool({
     connectionLimit:100,
-    host:'us-cdbr-iron-east-03.cleardb.net',
-    user:'bd3a2837bc4a1c',
-    password:'561f7a2c',
-    database:'heroku_2af719e82a1047a',
+    host: process.env.DB_HOST,
+    user:process.env.DB_USER,
+    password:process.env.DB_PASS,
+    database:process.env.DB_DATABASE,
     debug:false
  });
 
