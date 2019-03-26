@@ -16,3 +16,8 @@ Link to the Mobile Repo is : <a href="https://github.com/vishweshsoni/testing">M
 ## Author
 
 [Vishweshsoni](http://github.com/vishweshsoni)
+
+
+## License
+
+Please refer [LICENCE]
