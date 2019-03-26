@@ -20,4 +20,4 @@ Link to the Mobile Repo is : <a href="https://github.com/vishweshsoni/testing">M
 
 ## License
 
-Please refer [LICENCE]
+Please refer [LICENCE](https://github.com/vishweshsoni/LabelLab/blob/master/LICENSE)
