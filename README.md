@@ -5,7 +5,7 @@ Machine learning supported web-base image labelling tool for researcher.
 
 # Backend
 This is the prototype And its Backend has been developed using node.js.<br>
-It's Deployed on heroku and You can see api demo here:<a href="https://radiant-harbor-82820.herokuapp.com/animal">Clickhere</a>
+It's Deployed on heroku and You can see api demo here : <a href="https://radiant-harbor-82820.herokuapp.com/animal">Herokuapp</a>
 
 
 
