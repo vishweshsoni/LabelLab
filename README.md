@@ -12,3 +12,7 @@ It's Deployed on heroku and You can see api demo here : <a href="https://radiant
 # Mobile
 This is the prototype And its Mobile App is Developed Using Flutter.
 Link to the Mobile Repo is : <a href="https://github.com/vishweshsoni/testing">MobileApp</a> 
+
+## Author
+
+[Vishweshsoni](http://github.com/vishweshsoni)
