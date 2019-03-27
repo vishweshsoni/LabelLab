@@ -1,6 +1,6 @@
 
 var mysql = require("mysql");
-var md5 = require('md5');
+
 var path = require('path');
 var gm = require('gm');
 var express = require('express');
@@ -67,10 +67,11 @@ REST_ROUTER.prototype.handelRoutes = function(router, connection, md5) {
     });
     router.post("/upload",uploads, function(req, res) {
       console.log(name);
-      res.json({
-        "height":req.file.height,
-        "width":req.file.width,
-      });
+      // res.json({
+      //   "height":req.file.height,
+      //   "width":req.file.width,
+      // });
+      res.json(req.file);
       // var c = {
       //                 animal_image: name,
       //    }

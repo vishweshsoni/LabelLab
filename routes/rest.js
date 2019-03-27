@@ -1,6 +1,6 @@
 
 var mysql = require("mysql");
-var md5 = require('md5');
+
 
 function REST_ROUTER(router, connection, md5) {
 var self = this;
