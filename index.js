@@ -1,4 +1,4 @@
-
+//Node Modules that should be imported
 const http = require('http'); //for http request
 const mysql =require('mysql');
 const express= require('express');
@@ -7,11 +7,8 @@ const rest=require('./routes/rest');
 const animal_router=require('./routes/animal');
 // require('dotenv').config();
 
-
+//express Configuration
 var app=express();
-
-
-
 app.use(function(req, res, next) {
 res.header("Access-Control-Allow-Origin", "*");
 res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
@@ -25,8 +22,10 @@ var self=this;
 self.connectMysql();
 
 };
+
+//database setup we have used Cleardb 
 REST.prototype.connectMysql =function(){
-var self =this;
+var self =this
  var pool =mysql.createPool({
     connectionLimit:100,
     host: process.env.DB_HOST,
@@ -35,17 +34,6 @@ var self =this;
     database:process.env.DB_DATABASE,
     debug:false
  });
-
-// REST.prototype.connectMysql =function(){
-// var self =this;
-//  var pool =mysql.createPool({
-//     connectionLimit:2,
-//     host:'localhost',
-//     user:'root',
-//     password:'',
-//     database:'Labellab',
-//     debug:false
-//  });
 
 pool.getConnection(function (err,connection) {
    if(err){     
@@ -71,18 +59,12 @@ REST.prototype.configureExpress = function(connection){
         self.startServer();
         }
     
-
+    //this console works then our server runs correctly
     REST.prototype.startServer = function(){
         app.listen(process.env.PORT,function(){
             console.log("All Right I'm Alive");
         });
     }
-
-    // REST.prototype.startServer = function(){
-    //     app.listen(8110,function(){
-    //         console.log("All Right I'm Alive");
-    //     });
-    // }
 
     
 new REST();
